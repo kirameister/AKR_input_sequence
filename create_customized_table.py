@@ -10,15 +10,15 @@ original_CV_romantable = {
     "ky": ["きゃ", "きぃ", "きゅ", "きぇ", "きょ"],
     "gy": ["ぎゃ", "ぎぃ", "ぎゅ", "ぎぇ", "ぎょ"],
     "sy": ["しゃ", "しぃ", "しゅ", "しぇ", "しょ"],
-    "sh": ["しゃ", "し", "しゅ", "しぇ", "しょ"],
+    #"sh": ["しゃ", "し", "しゅ", "しぇ", "しょ"], ## 二重母音 (`/*h/` で `*-ou`) の実装のためコメントアウト
     "zy": ["じゃ", "じぃ", "じゅ", "じぇ", "じょ"],
     "ty": ["ちゃ", "ちぃ", "ちゅ", "ちぇ", "ちょ"],
-    "ch": ["ちゃ", "ち", "ちゅ", "ちぇ", "ちょ"],
+    #"ch": ["ちゃ", "ち", "ちゅ", "ちぇ", "ちょ"], ## 二重母音 (`/*h/` で `*-ou`) の実装のためコメントアウト
     "cy": ["ちゃ", "ちぃ", "ちゅ", "ちぇ", "ちょ"],
     "dy": ["ぢゃ", "ぢぃ", "ぢゅ", "ぢぇ", "ぢょ"],
     "ts": ["つぁ", "つぃ", "つ", "つぇ", "つぉ"],
-    "th": ["てゃ", "てぃ", "てゅ", "てぇ", "てょ"],
-    "dh": ["でゃ", "でぃ", "でゅ", "でぇ", "でょ"],
+    #"th": ["てゃ", "てぃ", "てゅ", "てぇ", "てょ"],  ## 二重母音 (`/*h/` で `*-ou`) の実装のためコメントアウト
+    #"dh": ["でゃ", "でぃ", "でゅ", "でぇ", "でょ"], ## 二重母音 (`/*h/` で `*-ou`) の実装のためコメントアウト
     "tw": ["とぁ", "とぃ", "とぅ", "とぇ", "とぉ"],
     "dw": ["どぁ", "どぃ", "どぅ", "どぇ", "どぉ"],
     "ny": ["にゃ", "にぃ", "にゅ", "にぇ", "にょ"],
@@ -31,7 +31,7 @@ original_CV_romantable = {
     "my": ["みゃ", "みぃ", "みゅ", "みぇ", "みょ"],
     "ry": ["りゃ", "りぃ", "りゅ", "りぇ", "りょ"],
     "wy": ["", "ゐ", "", "ゑ", ""],
-    "wh": ["うぁ", "うぃ", "う", "うぇ", "うぉ"],
+    #"wh": ["うぁ", "うぃ", "う", "うぇ", "うぉ"], ## 二重母音 (`/*h/` で `*-ou`) の実装のためコメントアウト
     "ly": ["ゃ", "ぃ", "ゅ", "ぇ", "ょ"],
     "xy": ["ゃ", "ぃ", "ゅ", "ぇ", "ょ"],
     "lk": ["ヵ", "", "", "ヶ", ""],
@@ -102,6 +102,17 @@ extra_romantable = {
         "d.": "だ。",
         "d,": "で、",
         "m.": "め。",
+        # 定形拡張
+        "kt": "こと",
+        "st": "して",
+        "krd": "けれど",
+        "dkrd": "だけれど",
+        "sr": "する",
+        "ds": "です",
+        "ms": "ます",
+        "mn": "もの",
+        "mt": "また",
+        "nr": "なる",
         # ; から始まるショートカット
         ";h": "←",
         ";m": "↓", # これは `/;j/` が `っ` に使用されているため。
@@ -224,9 +235,22 @@ for consonant in original_CV_romantable.keys():
     if k in target_table:
         print("{} -> {} already exists.. replaced by {} -> {}".format(k, target_table[k], k, value), file=sys.stderr)
     target_table[k] = value
-## /w/ => -oi
+## /w/ => -ei
     k = consonant + 'w'
-    value = original_CV_romantable[consonant][4] + 'い'
+    value = original_CV_romantable[consonant][3] + 'い'
+    if k in target_table:
+        print("{} -> {} already exists.. replaced by {} -> {}".format(k, target_table[k], k, value), file=sys.stderr)
+    target_table[k] = value
+## /p/ => -oi
+    k = consonant + 'p'
+    if consonant != 'p':
+        value = original_CV_romantable[consonant][4] + 'い'
+        if k in target_table:
+            print("{} -> {} already exists.. replaced by {} -> {}".format(k, target_table[k], k, value), file=sys.stderr)
+        target_table[k] = value
+## /h/ => -ou
+    k = consonant + 'h'
+    value = original_CV_romantable[consonant][4] + 'う'
     if k in target_table:
         print("{} -> {} already exists.. replaced by {} -> {}".format(k, target_table[k], k, value), file=sys.stderr)
     target_table[k] = value

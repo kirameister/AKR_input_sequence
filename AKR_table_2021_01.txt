@@ -18,11 +18,6 @@ syi	しぃ
 syu	しゅ
 sye	しぇ
 syo	しょ
-sha	しゃ
-shi	し
-shu	しゅ
-she	しぇ
-sho	しょ
 zya	じゃ
 zyi	じぃ
 zyu	じゅ
@@ -33,11 +28,6 @@ tyi	ちぃ
 tyu	ちゅ
 tye	ちぇ
 tyo	ちょ
-cha	ちゃ
-chi	ち
-chu	ちゅ
-che	ちぇ
-cho	ちょ
 cya	ちゃ
 cyi	ちぃ
 cyu	ちゅ
@@ -53,16 +43,6 @@ tsi	つぃ
 tsu	つ
 tse	つぇ
 tso	つぉ
-tha	てゃ
-thi	てぃ
-thu	てゅ
-the	てぇ
-tho	てょ
-dha	でゃ
-dhi	でぃ
-dhu	でゅ
-dhe	でぇ
-dho	でょ
 twa	とぁ
 twi	とぃ
 twu	とぅ
@@ -117,11 +97,6 @@ rye	りぇ
 ryo	りょ
 wyi	ゐ
 wye	ゑ
-wha	うぁ
-whi	うぃ
-whu	う
-whe	うぇ
-who	うぉ
 lya	ゃ
 lyi	ぃ
 lyu	ゅ
@@ -240,7 +215,7 @@ nn	ん
 z/	・
 z.	…
 z,	‥
-zh	←
+zh	ぞう
 zj	↓
 zk	↑
 zl	ぞん
@@ -265,24 +240,34 @@ t,	と、
 d.	だ。
 d,	で、
 m.	め。
+kt	こと
+st	して
+krd	けれど
+dkrd	だけれど
+sr	する
+ds	です
+ms	ます
+mn	もの
+mt	また
+nr	なる
 ;h	←
 ;m	↓
 ;k	↑
 ;l	→
-yy	っ	y
-kk	っ	k
-bb	っ	b
-ff	ふぁい
-pp	っ	p
-cc	っ	c
 jj	っ	j
-xx	っ	x
+cc	っ	c
+pp	っ	p
+bb	っ	b
+hh	ほう
 tt	っ	t
+kk	っ	k
 zz	っ	z
+ff	ふぁい
+yy	っ	y
+xx	っ	x
+ww	うぇい
 ss	っ	s
-ww	をい
 rr	っ	r
-hh	っ	h
 kyv	きゃん
 kyg	きぃん
 kym	きゅん
@@ -298,11 +283,6 @@ syg	しぃん
 sym	しゅん
 syd	しぇん
 syl	しょん
-shv	しゃん
-shg	しん
-shm	しゅん
-shd	しぇん
-shl	しょん
 zyv	じゃん
 zyg	じぃん
 zym	じゅん
@@ -313,11 +293,6 @@ tyg	ちぃん
 tym	ちゅん
 tyd	ちぇん
 tyl	ちょん
-chv	ちゃん
-chg	ちん
-chm	ちゅん
-chd	ちぇん
-chl	ちょん
 cyv	ちゃん
 cyg	ちぃん
 cym	ちゅん
@@ -333,16 +308,6 @@ tsg	つぃん
 tsm	つん
 tsd	つぇん
 tsl	つぉん
-thv	てゃん
-thg	てぃん
-thm	てゅん
-thd	てぇん
-thl	てょん
-dhv	でゃん
-dhg	でぃん
-dhm	でゅん
-dhd	でぇん
-dhl	でょん
 twv	とぁん
 twg	とぃん
 twm	とぅん
@@ -397,11 +362,6 @@ ryd	りぇん
 ryl	りょん
 wyg	ゐん
 wyd	ゑん
-whv	うぁん
-whg	うぃん
-whm	うん
-whd	うぇん
-whl	うぉん
 lyv	ゃん
 lyg	ぃん
 lym	ゅん
@@ -547,41 +507,76 @@ m;	みょ
 rq	りゃ
 rx	りゅ
 r;	りょ
-fw	ふぉい
+fw	ふぇい
+fp	ふぉい
+fh	ふぉう
 xf	ぁい
-xw	ぉい
+xw	ぇい
+xp	ぉい
+xh	ぉう
 lf	ぁい
-lw	ぉい
+lw	ぇい
+lp	ぉい
+lh	ぉう
 kf	かい
-kw	こい
+kw	けい
+kp	こい
+kh	こう
 gf	がい
-gw	ごい
+gw	げい
+gp	ごい
+gh	ごう
 sf	さい
-sw	そい
+sw	せい
+sp	そい
+sh	そう
 cf	かい
-cw	こい
+cw	せい
+cp	こい
+ch	こう
 zf	ざい
-zw	ぞい
+zw	ぜい
+zp	ぞい
 jf	じゃい
-jw	じょい
+jw	じぇい
+jp	じょい
+jh	じょう
 tf	たい
-tw	とい
+tw	てい
+tp	とい
+th	とう
 df	だい
-dw	どい
+dw	でい
+dp	どい
+dh	どう
 nf	ない
-nw	のい
+nw	ねい
+np	のい
+nh	のう
 hf	はい
-hw	ほい
+hw	へい
+hp	ほい
 bf	ばい
-bw	ぼい
+bw	べい
+bp	ぼい
+bh	ぼう
 pf	ぱい
-pw	ぽい
+pw	ぺい
+ph	ぽう
 mf	まい
-mw	もい
+mw	めい
+mp	もい
+mh	もう
 yf	やい
-yw	よい
+yw	いぇい
+yp	よい
+yh	よう
 rf	らい
-rw	ろい
+rw	れい
+rp	ろい
+rh	ろう
 wf	わい
+wp	をい
+wh	をう
 q	ー
 v	ん
