@@ -3,16 +3,6 @@ i	い
 u	う
 e	え
 o	お
-va	ゔぁ
-vi	ゔぃ
-vu	ゔ
-ve	ゔぇ
-vo	ゔぉ
-vya	ゔゃ
-vyi	ゔぃ
-vyu	ゔゅ
-vye	ゔぇ
-vyo	ゔょ
 kya	きゃ
 kyi	きぃ
 kyu	きゅ
@@ -188,11 +178,6 @@ ci	し
 cu	ちゅ
 ce	せ
 co	ちょ
-qa	くぁ
-qi	くぃ
-qu	く
-qe	くぇ
-qo	くぉ
 za	ざ
 zi	じ
 zu	ず
@@ -284,37 +269,25 @@ n'	ん
 xn	ん
 n	ん
 ;j	っ
-q	ー
 r.	る。
 t.	た。
 t,	と、
 d.	だ。
 d,	で、
-ww	をい
-jj	っ	j
 ss	っ	s
+ff	ふぁい
+rr	っ	r
 cc	っ	c
+jj	っ	j
 xx	っ	x
+kk	っ	k
+yy	っ	y
+ww	をい
 tt	っ	t
+bb	っ	b
 hh	っ	h
 pp	っ	p
 zz	っ	z
-yy	っ	y
-rr	っ	r
-ff	ふぁい
-bb	っ	b
-kk	っ	k
-v	ん
-vv	ゔぁん
-vg	ゔぃん
-vm	ゔん
-vd	ゔぇん
-vl	ゔぉん
-vyv	ゔゃん
-vyg	ゔぃん
-vym	ゔゅん
-vyd	ゔぇん
-vyl	ゔょん
 kyv	きゃん
 kyg	きぃん
 kym	きゅん
@@ -490,11 +463,6 @@ cg	しん
 cm	くん
 cd	せん
 cl	こん
-qv	くぁん
-qg	くぃん
-qm	くん
-qd	くぇん
-ql	くぉん
 zv	ざん
 zg	じん
 zm	ずん
@@ -594,8 +562,6 @@ m;	みょ
 rq	りゃ
 rx	りゅ
 r;	りょ
-vf	ゔぁい
-vw	ゔぉい
 fw	ふぉい
 xf	ぁい
 xw	ぉい
@@ -609,8 +575,6 @@ sf	さい
 sw	そい
 cf	かい
 cw	こい
-qf	くぁい
-qw	くぉい
 zf	ざい
 zw	ぞい
 jf	じゃい
@@ -634,3 +598,5 @@ yw	よい
 rf	らい
 rw	ろい
 wf	わい
+q	ー
+v	ん

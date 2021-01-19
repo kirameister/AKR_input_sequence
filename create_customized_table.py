@@ -95,8 +95,6 @@ extra_romantable = {
         ## }}}
         # 単打促音
         ";j": "っ",
-        # 長音
-        "q": "ー",
         # 句読点前母音
         "r.": "る。",
         "t.": "た。",
@@ -158,11 +156,6 @@ for c in list(sokuon_set):
     value = "っ\t" + c
     target_table[key] = value
 
-
-# N ("ん" という撥音) は /v/ の単打で対応。
-if 'v' in target_table:
-    print("{} -> {} already exists.. replaced by {} -> {}".format('v', target_table['v'], 'v', 'ん'), file=sys.stderr)
-target_table['v'] = 'ん'
 
 
 # -[aiuoe]N に対応するキーはそれぞれ /v/、/g/、/m/、/d/、/l/ となる。 
@@ -231,6 +224,19 @@ for consonant in original_CV_romantable.keys():
     if k in target_table:
         print("{} -> {} already exists.. replaced by {} -> {}".format(k, target_table[k], k, value), file=sys.stderr)
     target_table[k] = value
+
+
+# 長音
+target_table = {k:v for k,v in target_table.items() if not k.startswith('q')}
+target_table['q'] = 'ー'
+
+
+# N ("ん" という撥音) は /v/ の単打で対応。
+target_table = {k:v for k,v in target_table.items() if not k.startswith('v')}
+if 'v' in target_table:
+    print("{} -> {} already exists.. replaced by {} -> {}".format('v', target_table['v'], 'v', 'ん'), file=sys.stderr)
+target_table['v'] = 'ん'
+
 
 
 # print(target_table)
