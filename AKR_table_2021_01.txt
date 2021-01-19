@@ -250,6 +250,7 @@ ms	ます
 mn	もの
 mt	また
 nr	なる
+kn	この
 tm	ため
 ;h	←
 ;j	↓
@@ -257,18 +258,18 @@ tm	ため
 ;l	→
 ;g	ドイツ
 ;d	デュッセルドルフ
-tt	っ	t
-hh	ほう
-cc	っ	c
+zz	っ	z
 pp	っ	p
+ww	うぇい
+hh	ほう
 ss	っ	s
+ff	ふぁい
+cc	っ	c
+tt	っ	t
+xx	っ	x
+rr	っ	r
 bb	っ	b
 yy	っ	y
-rr	っ	r
-xx	っ	x
-ww	うぇい
-ff	ふぁい
-zz	っ	z
 kyv	きゃん
 kyk	きぃん
 kyj	きゅん
