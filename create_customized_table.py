@@ -113,6 +113,7 @@ extra_romantable = {
         "mn": "もの",
         "mt": "また",
         "nr": "なる",
+        "tm": "ため",
         # ; から始まるショートカット
         ";h": "←",
         ";j": "↓",
@@ -183,6 +184,8 @@ for consonant in original_CV_romantable.keys():
     for i in range(len(v_N_key_list)):
         k = consonant + v_N_key_list[i]
         if original_CV_romantable[consonant][i] == "":
+            continue
+        if k in ('dk'): # `ぢん` という連続はあまりでてこないのと `/dkrd/` という定形が存在するため
             continue
         value = original_CV_romantable[consonant][i] + 'ん'
         if k in target_table:
