@@ -136,16 +136,6 @@ lka	ヵ
 lke	ヶ
 xka	ヵ
 xke	ヶ
-kwa	くぁ
-kwi	くぃ
-kwu	くぅ
-kwe	くぇ
-kwo	くぉ
-gwa	ぐぁ
-gwi	ぐぃ
-gwu	ぐぅ
-gwe	ぐぇ
-gwo	ぐぉ
 xwa	ゎ
 lwa	ゎ
 xa	しゃ
@@ -274,20 +264,25 @@ t.	た。
 t,	と、
 d.	だ。
 d,	で、
-ss	っ	s
+m.	め。
+;h	←
+;m	↓
+;k	↑
+;l	→
+yy	っ	y
+kk	っ	k
+bb	っ	b
 ff	ふぁい
-rr	っ	r
+pp	っ	p
 cc	っ	c
 jj	っ	j
 xx	っ	x
-kk	っ	k
-yy	っ	y
-ww	をい
 tt	っ	t
-bb	っ	b
-hh	っ	h
-pp	っ	p
 zz	っ	z
+ss	っ	s
+ww	をい
+rr	っ	r
+hh	っ	h
 kyv	きゃん
 kyg	きぃん
 kym	きゅん
@@ -421,16 +416,6 @@ lkv	ヵん
 lkd	ヶん
 xkv	ヵん
 xkd	ヶん
-kwv	くぁん
-kwg	くぃん
-kwm	くぅん
-kwd	くぇん
-kwl	くぉん
-gwv	ぐぁん
-gwg	ぐぃん
-gwm	ぐぅん
-gwd	ぐぇん
-gwl	ぐぉん
 xwv	ゎん
 lwv	ゎん
 xv	ぁん
