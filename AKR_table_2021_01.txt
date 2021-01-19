@@ -254,20 +254,22 @@ nr	なる
 ;m	↓
 ;k	↑
 ;l	→
-jj	っ	j
-cc	っ	c
-pp	っ	p
-bb	っ	b
-hh	ほう
-tt	っ	t
-kk	っ	k
-zz	っ	z
-ff	ふぁい
-yy	っ	y
+;g	ドイツ
+;d	デュッセルドルフ
 xx	っ	x
-ww	うぇい
-ss	っ	s
+jj	っ	j
+yy	っ	y
+bb	っ	b
+tt	っ	t
+zz	っ	z
 rr	っ	r
+pp	っ	p
+ww	うぇい
+cc	っ	c
+kk	っ	k
+ff	ふぁい
+ss	っ	s
+hh	ほう
 kyv	きゃん
 kyg	きぃん
 kym	きゅん
