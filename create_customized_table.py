@@ -94,7 +94,7 @@ extra_romantable = {
         "n": "ん",
         ## }}}
         # 単打促音
-        ";j": "っ",
+        ";;": "っ",
         # 句読点前母音
         "r.": "る。",
         "t.": "た。",
@@ -115,7 +115,7 @@ extra_romantable = {
         "nr": "なる",
         # ; から始まるショートカット
         ";h": "←",
-        ";m": "↓", # これは `/;j/` が `っ` に使用されているため。
+        ";j": "↓",
         ";k": "↑",
         ";l": "→",
         ";g": "ドイツ",
@@ -126,13 +126,13 @@ sokuon_set = {
         'c',
         #'q', # 長母音に使用
         #'v', # 追加的な撥音 ("ん") に使用
-        #'l',
+        #'l', # 追加的な撥音 ("ん") に使用
         'x',
-        'k',
+        #'k',
         #'g', # 追加的な撥音 ("ん") に使用
         's',
         'z',
-        'j',
+        #'j', # 追加的な撥音 ("ん") に使用
         't',
         #'d', # 追加的な撥音 ("ん") に使用
         'h',
@@ -177,9 +177,9 @@ for c in list(sokuon_set):
 
 
 
-# -[aiuoe]N に対応するキーはそれぞれ /v/、/g/、/m/、/d/、/l/ となる。 
+# -[aiuoe]N に対応するキーはそれぞれ /v/、/k/、/j/、/d/、/l/ となる。 
 for consonant in original_CV_romantable.keys():
-    v_N_key_list = ["v", "g", "m", "d", "l"]
+    v_N_key_list = ["v", "k", "j", "d", "l"]
     for i in range(len(v_N_key_list)):
         k = consonant + v_N_key_list[i]
         if original_CV_romantable[consonant][i] == "":
