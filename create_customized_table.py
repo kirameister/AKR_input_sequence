@@ -130,8 +130,8 @@ sokuon_set = {
         #'v', # 追加的な撥音 ("ん") に使用
         #'l', # 追加的な撥音 ("ん") に使用
         'x',
-        #'k',
-        #'g', # 追加的な撥音 ("ん") に使用
+        'k',
+        'g', # 追加的な撥音 ("ん") に使用
         's',
         'z',
         #'j', # 追加的な撥音 ("ん") に使用
@@ -181,12 +181,12 @@ for c in list(sokuon_set):
 
 # -[aiuoe]N に対応するキーはそれぞれ /v/、/k/、/j/、/d/、/l/ となる。 
 for consonant in original_CV_romantable.keys():
-    v_N_key_list = ["v", "k", "j", "d", "l"]
+    v_N_key_list = ["v", "m", "j", "d", "l"]
     for i in range(len(v_N_key_list)):
         k = consonant + v_N_key_list[i]
         if original_CV_romantable[consonant][i] == "":
             continue
-        if k in ('dk'): # `ぢん` という連続はあまりでてこないのと `/dkrd/` という定形が存在するため
+        if k in ('dk', 'tm'): # `ぢん` という連続はあまりでてこないのと `/dkrd/` という定形が存在するため
             continue
         value = original_CV_romantable[consonant][i] + 'ん'
         if k in target_table:
