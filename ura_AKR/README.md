@@ -99,13 +99,17 @@
 ----
 
 外来語: ???
+
 Wikipedia の外国語に関するページによると、現状日本語としてある程度定着した外国語の拗音と、そうではない拗音が存在するらしい。どこまで拗音セットとしてタイプできるようにするかはまだ考えていない。
 
+----
+
+上の数値から、`48 + 2 + 9 + 26 + 33 = 118` の組み合わせが最低限必要となる。
 
 
 
 # リンクなど:
 
-[特殊音](https://green.adam.ne.jp/roomazi/tokusyuon.html)
-[外来語](https://ja.wikipedia.org/wiki/%E5%A4%96%E6%9D%A5%E8%AA%9E)
+* [特殊音](https://green.adam.ne.jp/roomazi/tokusyuon.html)
+* [外来語](https://ja.wikipedia.org/wiki/%E5%A4%96%E6%9D%A5%E8%AA%9E)
 
