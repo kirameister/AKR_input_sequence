@@ -44,6 +44,9 @@ def main(input_file, n):
                     p_tokens[i-1] = p_tokens[i-1] + p_tokens[i]
                     p_tokens.pop(i)
                     continue
+                # ついでに (?) BT となっていたタグが連続して現れる場合、それらを一つのトークンとして扱う 
+                if i > 0 and p_tokens[i] == '〓' and p_tokens[i-1] == '〓':
+                    p_tokens.pop(i)
             # N_gram を生成する
             n_gram = []
             for i in range(len(p_tokens) - n + 1):
