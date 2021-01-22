@@ -28,7 +28,7 @@ def main(input_file, n):
                 tokens[i] = re.sub('←/やじるし', '←/←', tokens[i])
                 tokens[i] = re.sub('→/やじるし', '→/→', tokens[i])
                 if not token_non_bt_pattern.search(tokens[i]):
-                    print("Token replaced by BT : \t {} in {}".format(tokens[i], line))
+                    print("Token replaced by BT : \t {} in {}".format(tokens[i], line), file=sys.stderr)
                     tokens[i] = 'BT'
                 # その後の処理を楽にするため、`BT` を `BT/〓` に置き換え
                 if tokens[i] == 'BT':
