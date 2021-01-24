@@ -25,6 +25,17 @@
 
 [作業ログ](development_log/README.md)
 
+## 裏 AKR 配列
+
+単打面:
+```
+は と し 、 つ      Ａ く こ が な
+の シ か ん っ      て う い シ シ
+す せ ま る を      た で に 。 Ａ
+
+Ａ: ー
+```
+
 # リンクなど:
 
 * [特殊音](https://green.adam.ne.jp/roomazi/tokusyuon.html)
