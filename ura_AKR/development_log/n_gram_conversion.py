@@ -13,20 +13,20 @@ def main(input_file, n):
         for line in lines:
             line = line.rstrip()
             line = re.sub('^\s+', '', line)
-            # 拗音から始まる音のトークンがあれば行全体を無視する
-            if youon_first_pattern.search(line):
-                print("Line ignored: \t{}".format(line), file=sys.stderr)
-                continue
+            ## 拗音から始まる音のトークンがあれば行全体を無視する
+            #if youon_first_pattern.search(line):
+            #    print("Line ignored: \t{}".format(line), file=sys.stderr)
+            #    continue
             # 表記文字に記号のようなものが入っていれば、そのトークンを BT とする
             tokens = line.split(' ')
             occurrence = tokens.pop(0)
             for i in range(len(tokens)):
-                tokens[i] = re.sub('…/・・・', '…/…', tokens[i])
-                tokens[i] = re.sub('‥/・・', '‥/‥', tokens[i])
-                tokens[i] = re.sub('↓/やじるし', '↓/↓', tokens[i])
-                tokens[i] = re.sub('↑/やじるし', '↑/↑', tokens[i])
-                tokens[i] = re.sub('←/やじるし', '←/←', tokens[i])
-                tokens[i] = re.sub('→/やじるし', '→/→', tokens[i])
+                tokens[i] = re.sub('…/・・・','BT' , tokens[i])
+                tokens[i] = re.sub('‥/・・', 'BT', tokens[i])
+                tokens[i] = re.sub('↓/やじるし', 'BT', tokens[i])
+                tokens[i] = re.sub('↑/やじるし', 'BT', tokens[i])
+                tokens[i] = re.sub('←/やじるし', 'BT', tokens[i])
+                tokens[i] = re.sub('→/やじるし', 'BT', tokens[i])
                 if not token_non_bt_pattern.search(tokens[i]):
                     print("Token replaced by BT : \t {} in {}".format(tokens[i], line), file=sys.stderr)
                     tokens[i] = 'BT'
@@ -37,13 +37,13 @@ def main(input_file, n):
             line_phonetic = ""
             for i in range(len(tokens)):
                 line_phonetic += re.sub('^.*/', '', tokens[i])
-            # その読みデータを一旦文字ベースのリストにして、拗音セットを一つの要素にまとめながら頻度の辞書に追加していく
+            # その読みデータを一旦文字ベースのリストにして、拗音セットを一つの要素にまとめながら頻度の辞書に追加していく => やめました
             p_tokens = list(line_phonetic)
             for i in reversed(range(len(p_tokens))):
-                if p_tokens[i] in ('ゃ', 'ゅ', 'ょ', 'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ', 'ゎ'):
-                    p_tokens[i-1] = p_tokens[i-1] + p_tokens[i]
-                    p_tokens.pop(i)
-                    continue
+                #if p_tokens[i] in ('ゃ', 'ゅ', 'ょ', 'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ', 'ゎ'):
+                #    p_tokens[i-1] = p_tokens[i-1] + p_tokens[i]
+                #    p_tokens.pop(i)
+                #    continue
                 # ついでに (?) BT となっていたタグが連続して現れる場合、それらを一つのトークンとして扱う 
                 if i > 0 and p_tokens[i] == '〓' and p_tokens[i-1] == '〓':
                     p_tokens.pop(i)
