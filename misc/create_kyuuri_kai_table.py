@@ -14,7 +14,7 @@ CV_table = {
     "m":  ["ま", "み", "む", "め", "も"],
     "y":  ["や", "", "ゆ", "", "よ"],
     "r":  ["ら", "り", "る", "れ", "ろ"],
-    "w":  ["わ", "", "う", "", "を"],
+    "w":  ["わ", "ゐ", "う", "ゑ", "を"],
     # 濁音
     "g":  ["が", "ぎ", "ぐ", "げ", "ご"],
     "z":  ["ざ", "じ", "ず", "ぜ", "ぞ"],
@@ -28,7 +28,7 @@ extra_CV_table = {
     "v":  ["ゔぁ", "ゔぃ", "ゔ", "ゔぇ", "ゔぉ"],
 }
 
-key_vowel_list = ["h", "k", "j", "l", ";"]
+key_vowel_list = ["h", "k", "j", ";", "l"]
 
 key_consonant_map = {
     "q": "g",
@@ -47,6 +47,21 @@ key_consonant_map = {
     "c": "b",
     "v": "d",
 }
+
+sokuon_set = {
+        'b',
+        'd',
+        's',
+        'f',
+        'g',
+        'e',
+        'r',
+        'q',
+        'z',
+        'v',
+        'c',
+        't',
+    }
 
 target_table = dict()
 
@@ -78,7 +93,8 @@ def main():
 
     # 母音などの文字をテーブルに追加しておく。
     extra_key_char_map = {
-        "m": "ん",
+        "n": "ん",
+        "m": "っ",
         ",": "、",
         ".": "。",
         "p": "ー",
@@ -122,6 +138,63 @@ def main():
             if key in target_table:
                 print("Overlapping key for \"{}->{}\"!! Overwriting with \"{}\"..".format(key, target_table[key], value), file=sys.stderr)
             target_table[key] = value
+
+    # 促音処理
+    for c in list(sokuon_set):
+        key = c + c
+        value = "っ\t" + c
+        target_table[key] = value
+
+    # 「小」キーの処理... 
+    special_yousokuonn_key = 'b'
+    isolate_youonn_key_dict = {
+            "h": "ぁ",
+            "j": "ぅ",
+            "k": "ぃ",
+            "l": "ぉ",
+            ";": "ぇ",
+            "xh": "ゎ",
+            "tj": "っ",
+            "u": "ゃ",
+            "i": "ゅ",
+            "o": "ょ",
+    }
+    for key in isolate_youonn_key_dict.keys():
+        value = isolate_youonn_key_dict[key]
+        key = special_yousokuonn_key + key
+        if key in target_table:
+            print("Overlapping key for \"{}->{}\"!! Overwriting with \"{}\"..".format(key, target_table[key], value), file=sys.stderr)
+        target_table[key] = value
+
+    extra_youonn_default_cv_dict = {
+            "b": "び",
+            "k": "く",
+            "n": "に",
+            "s": "し",
+            "t": "つ",
+            "g": "ぐ",
+            "r": "り",
+            "h": "ふ",
+            "p": "ぴ",
+            "d": "ぢ",
+            "m": "み",
+            "w": "う",
+            "z": "じ",
+            }
+    extra_youonn_default_v_list = ["ゃ", "ぃ", "ゅ", "ぇ", "ょ"]
+    for consonant_key in key_consonant_map:
+        if key_consonant_map[consonant_key] in ("y", "v"):
+            continue
+        consonant = key_consonant_map[consonant_key]
+        if consonant not in extra_youonn_default_cv_dict:
+            continue
+        for vowel_key_index in range(len(key_vowel_list)):
+            key = consonant_key + special_yousokuonn_key + key_vowel_list[vowel_key_index]
+            value = extra_youonn_default_cv_dict[consonant] + extra_youonn_default_v_list[vowel_key_index]
+            if key in target_table:
+                print("Overlapping key for \"{}->{}\"!! Overwriting with \"{}\"..".format(key, target_table[key], value), file=sys.stderr)
+            target_table[key] = value
+
 
     # 最後に標準出力へ出力する
     for key in target_table.keys():
