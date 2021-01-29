@@ -28,7 +28,7 @@ extra_CV_table = {
     "v":  ["ゔぁ", "ゔぃ", "ゔ", "ゔぇ", "ゔぉ"],
 }
 
-key_vowel_list = ["h", "j", "k", "l", ";"]
+key_vowel_list = ["h", "k", "j", "l", ";"]
 
 key_consonant_map = {
     "q": "g",
