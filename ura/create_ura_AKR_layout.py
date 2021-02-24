@@ -18,6 +18,9 @@ target_table['u'] = 'う'
 target_table['y'] = 'え'
 target_table['p'] = 'お'
 
+# 撥音
+target_table['g'] = 'ん'
+
 # 句読点
 target_table[','] = '、'
 target_table['.'] = '。'
