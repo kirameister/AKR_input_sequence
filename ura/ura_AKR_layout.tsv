@@ -1,13 +1,13 @@
 hh	っ	h
+gg	っ	g
+jj	っ	j
+ff	っ	f
+aa	っ	a
+;;	っ	;
 ss	っ	s
 kk	っ	k
-;;	っ	;
-jj	っ	j
-gg	っ	g
 dd	っ	d
-aa	っ	a
 ll	っ	l
-ff	っ	f
 o	あ
 i	い
 u	う
@@ -105,12 +105,12 @@ hv	にょ
 ;x	ひゃ
 ;c	ひゅ
 ;v	ひょ
-sx	みゃ
-sc	みゅ
-sv	みょ
-fx	りゃ
-fc	りゅ
-fv	りょ
+sm	みゃ
+s,	みゅ
+s.	みょ
+fm	りゃ
+f,	りゅ
+f.	りょ
 hw	ぴゃ
 he	ぴゅ
 hr	ぴょ
