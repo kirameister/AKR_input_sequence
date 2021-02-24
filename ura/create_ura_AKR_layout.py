@@ -40,12 +40,14 @@ target_table[';l'] = 'ほ'
 ## 3指スタート
 target_table['sf'] = 'ま'
 target_table['sg'] = 'み'
-target_table['sr'] = 'む'
+target_table['sv'] = 'む'
+target_table['sb'] = 'む' # 追加
 target_table['sd'] = 'め'
 target_table['sa'] = 'も'
 target_table['lj'] = 'さ'
 target_table['lh'] = 'し'
-target_table['lu'] = 'す'
+target_table['ln'] = 'す'
+target_table['lm'] = 'す' # 追加
 target_table['lk'] = 'せ'
 target_table['l;'] = 'そ'
 ## 2指スタート
