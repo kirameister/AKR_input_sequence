@@ -3,7 +3,7 @@
 import sys
 
 target_table = {}
-sokuon_key_set = { 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';' }
+sokuon_key_set = { 'a', 's', 'd', 'f', 'h', 'j', 'k', 'l', ';' }
 
 # 促音は同じキーを二回ストロークで
 for c in sokuon_key_set:
