@@ -118,6 +118,7 @@ vowel_keys = ['m', ',', '.']
 consonant_key_pair = {
         "s": ['みゃ', 'みゅ', 'みょ'],
         "f": ['りゃ', 'りゅ', 'りょ'],
+        "/": ['ゃ', 'ゅ', 'ょ'],
         }
 for consonant_key in consonant_key_pair.keys():
     for i in (range(len(vowel_keys))):

@@ -1,12 +1,12 @@
-aa	っ	a
-ff	っ	f
-tt	っ	t
-jj	っ	j
 hh	っ	h
-ll	っ	l
 ss	っ	s
+ll	っ	l
+tt	っ	t
+ff	っ	f
 ee	っ	e
+jj	っ	j
 ;;	っ	;
+aa	っ	a
 o	あ
 i	い
 u	う
@@ -116,6 +116,9 @@ s.	みょ
 fm	りゃ
 f,	りゅ
 f.	りょ
+/m	ゃ
+/,	ゅ
+/.	ょ
 hw	ぴゃ
 hd	ぴゅ
 hr	ぴょ
