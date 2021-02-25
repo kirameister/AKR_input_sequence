@@ -1,12 +1,12 @@
+aa	っ	a
+ff	っ	f
+tt	っ	t
+jj	っ	j
+hh	っ	h
+ll	っ	l
+ss	っ	s
 ee	っ	e
 ;;	っ	;
-jj	っ	j
-ss	っ	s
-ff	っ	f
-ll	っ	l
-tt	っ	t
-hh	っ	h
-aa	っ	a
 o	あ
 i	い
 u	う
@@ -107,6 +107,9 @@ hv	にょ
 ;x	ひゃ
 ;c	ひゅ
 ;v	ひょ
+/x	ゃ
+/c	ゅ
+/v	ょ
 sm	みゃ
 s,	みゅ
 s.	みょ
@@ -128,6 +131,9 @@ lr	じょ
 ;w	びゃ
 ;d	びゅ
 ;r	びょ
+/w	ゃ
+/d	ゅ
+/r	ょ
 zh	←
 zj	↓
 ze	↑

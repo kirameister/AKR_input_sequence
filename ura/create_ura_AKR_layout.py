@@ -107,6 +107,7 @@ consonant_key_pair = {
         "j": ['ちゃ', 'ちゅ', 'ちょ'],
         "h": ['にゃ', 'にゅ', 'にょ'],
         ";": ['ひゃ', 'ひゅ', 'ひょ'],
+        "/": ['ゃ', 'ゅ', 'ょ'],
         }
 for consonant_key in consonant_key_pair.keys():
     for i in (range(len(vowel_keys))):
@@ -132,6 +133,7 @@ consonant_key_pair = {
         "k": ['ぎゃ', 'ぎゅ', 'ぎょ'],
         "l": ['じゃ', 'じゅ', 'じょ'],
         ";": ['びゃ', 'びゅ', 'びょ'],
+        "/": ['ゃ', 'ゅ', 'ょ'],
         }
 for consonant_key in consonant_key_pair.keys():
     for i in (range(len(vowel_keys))):
