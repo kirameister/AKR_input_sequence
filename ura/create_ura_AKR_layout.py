@@ -32,6 +32,7 @@ target_table['q'] = 'ー'
 ## 4指スタート
 target_table['as'] = 'を'
 target_table['af'] = 'わ'
+target_table['ad'] = 'わ' # 追加
 target_table[';j'] = 'は'
 target_table[';h'] = 'ひ'
 target_table[';k'] = 'ふ'
@@ -42,23 +43,29 @@ target_table['sf'] = 'ま'
 target_table['sg'] = 'み'
 target_table['sv'] = 'む'
 target_table['sb'] = 'む' # 追加
+target_table['sr'] = 'む' # 追加
 target_table['sd'] = 'め'
+target_table['sq'] = 'め' # 追加
 target_table['sa'] = 'も'
 target_table['lj'] = 'さ'
 target_table['lh'] = 'し'
 target_table['ln'] = 'す'
 target_table['lm'] = 'す' # 追加
+target_table['lu'] = 'す' # 追加
 target_table['lk'] = 'せ'
+target_table['lp'] = 'せ' # 追加
 target_table['l;'] = 'そ'
 ## 2指スタート
 target_table['df'] = 'や'
 target_table['dg'] = 'ゆ'
 target_table['da'] = 'よ'
+target_table['ds'] = 'よ' # 追加
 target_table['kj'] = 'か'
 target_table['kh'] = 'き'
 target_table['kn'] = 'く'
 target_table['km'] = 'く' # 追加
-target_table['kp'] = 'け'
+target_table['kl'] = 'け'
+target_table['kp'] = 'け' # 追加
 target_table['k;'] = 'こ'
 ## 1指スタート
 target_table['fd'] = 'ら'
@@ -76,8 +83,8 @@ target_table['j;'] = 'と'
 ## 0指スタート
 target_table['hk'] = 'な'
 target_table['hi'] = 'に'
-target_table['ho'] = 'ぬ'
-target_table['hl'] = 'ね'
+target_table['hl'] = 'ぬ'
+target_table['ho'] = 'ね'
 target_table['h;'] = 'の'
 target_table['hp'] = 'の' # 追加
 

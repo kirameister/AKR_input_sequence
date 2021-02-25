@@ -1,12 +1,12 @@
-hh	っ	h
 ss	っ	s
-ll	っ	l
+hh	っ	h
 tt	っ	t
-ff	っ	f
-ee	っ	e
-jj	っ	j
 ;;	っ	;
+ee	っ	e
+ff	っ	f
+jj	っ	j
 aa	っ	a
+ll	っ	l
 o	あ
 i	い
 u	う
@@ -18,6 +18,7 @@ g	ん
 q	ー
 as	を
 af	わ
+at	わ
 ;j	は
 ;h	ひ
 ;e	ふ
@@ -27,21 +28,27 @@ sf	ま
 sg	み
 sv	む
 sb	む
+sr	む
 st	め
+sq	め
 sa	も
 lj	さ
 lh	し
 ln	す
 lm	す
+lu	す
 le	せ
+lp	せ
 l;	そ
 tf	や
 tg	ゆ
 ta	よ
+ts	よ
 ej	か
 eh	き
 en	く
 em	く
+el	け
 ep	け
 e;	こ
 ft	ら
@@ -58,8 +65,8 @@ jp	て
 j;	と
 he	な
 hi	に
-ho	ぬ
-hl	ね
+hl	ぬ
+ho	ね
 h;	の
 hp	の
 hf	ぱ
