@@ -35,8 +35,12 @@ target_table['af'] = 'わ'
 target_table['ad'] = 'わ' # 追加
 target_table[';j'] = 'は'
 target_table[';h'] = 'ひ'
+target_table[';n'] = 'ひ' # 追加
+target_table[';m'] = 'ひ' # 追加
 target_table[';k'] = 'ふ'
+target_table[';i'] = 'ふ' # 追加
 target_table[';u'] = 'へ'
+target_table[';o'] = 'へ' # 追加
 target_table[';l'] = 'ほ'
 ## 3指スタート
 target_table['sf'] = 'ま'

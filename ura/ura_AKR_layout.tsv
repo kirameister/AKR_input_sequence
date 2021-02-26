@@ -1,12 +1,12 @@
+ss	っ	s
+hh	っ	h
 dd	っ	d
 ll	っ	l
-;;	っ	;
-jj	っ	j
-ss	っ	s
 ff	っ	f
-hh	っ	h
-kk	っ	k
 aa	っ	a
+kk	っ	k
+jj	っ	j
+;;	っ	;
 o	あ
 i	い
 u	う
@@ -21,8 +21,12 @@ af	わ
 ad	わ
 ;j	は
 ;h	ひ
+;n	ひ
+;m	ひ
 ;k	ふ
+;i	ふ
 ;u	へ
+;o	へ
 ;l	ほ
 sf	ま
 sg	み
