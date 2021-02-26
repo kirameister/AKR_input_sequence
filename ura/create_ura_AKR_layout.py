@@ -53,6 +53,7 @@ target_table['sq'] = 'め' # 追加
 target_table['sa'] = 'も'
 target_table['lj'] = 'さ'
 target_table['lh'] = 'し'
+target_table['li'] = 'し' # 追加
 target_table['ln'] = 'す'
 target_table['lm'] = 'す' # 追加
 target_table['lu'] = 'す' # 追加

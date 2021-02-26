@@ -1,12 +1,12 @@
-ee	っ	e
-aa	っ	a
-ff	っ	f
-;;	っ	;
-ll	っ	l
-ss	っ	s
-hh	っ	h
-tt	っ	t
 jj	っ	j
+;;	っ	;
+tt	っ	t
+aa	っ	a
+ee	っ	e
+ff	っ	f
+ss	っ	s
+ll	っ	l
+hh	っ	h
 o	あ
 i	い
 u	う
@@ -38,6 +38,7 @@ sq	め
 sa	も
 lj	さ
 lh	し
+li	し
 ln	す
 lm	す
 lu	す
