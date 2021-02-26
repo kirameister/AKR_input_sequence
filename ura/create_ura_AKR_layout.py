@@ -45,6 +45,7 @@ target_table[';l'] = 'ほ'
 ## 3指スタート
 target_table['sf'] = 'ま'
 target_table['sg'] = 'み'
+target_table['se'] = 'み' # 追加
 target_table['sv'] = 'む'
 target_table['sb'] = 'む' # 追加
 target_table['sr'] = 'む' # 追加
