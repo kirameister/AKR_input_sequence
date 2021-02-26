@@ -69,15 +69,15 @@ target_table['kp'] = 'け' # 追加
 target_table['k;'] = 'こ'
 ## 1指スタート
 target_table['fd'] = 'ら'
-target_table['fe'] = 'ら' # 追加
-target_table['fs'] = 'り'
-target_table['fw'] = 'る'
+target_table['fe'] = 'り'
+target_table['fs'] = 'る'
+target_table['fw'] = 'る' # 追加
 target_table['fq'] = 'れ'
 target_table['fa'] = 'ろ'
 target_table['jk'] = 'た'
-target_table['ji'] = 'た' # 追加
-target_table['jl'] = 'ち'
+target_table['ji'] = 'ち'
 target_table['jo'] = 'つ'
+target_table['jl'] = 'つ' # 追加
 target_table['jp'] = 'て'
 target_table['j;'] = 'と'
 ## 0指スタート
