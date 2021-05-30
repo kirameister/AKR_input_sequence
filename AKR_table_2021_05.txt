@@ -284,19 +284,20 @@ tm	ため
 ;l	→
 ;g	ドイツ
 ;d	デュッセルドルフ
-xx	っ	x
-cc	っ	c
-pp	っ	p
-ff	ふぁい
-rr	っ	r
 hh	っ	h
-gg	っ	g
-bb	っ	b
-zz	っ	z
-tt	っ	t
 yy	っ	y
+rr	っ	r
 ww	うぇい
 kk	っ	k
+tt	っ	t
+pp	っ	p
+zz	っ	z
+ff	ふぁい
+gg	っ	g
+bb	っ	b
+xx	っ	x
+dd	っ	d
+cc	っ	c
 ss	っ	s
 kyv	きゃん
 kym	きぃん
