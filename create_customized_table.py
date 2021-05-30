@@ -181,8 +181,9 @@ for c in list(sokuon_set):
 
 
 # -[aiuoe]N に対応するキーはそれぞれ /v/、/k/、/j/、/d/、/l/ となる。 
+# => /d/ に関してはこのルールから除外。これは /dd/ に 'でん' ではなく促音を充てたいため。
 for consonant in original_CV_romantable.keys():
-    v_N_key_list = ["v", "m", "j", "d", "l"]
+    v_N_key_list = ["v", "m", "j", "l"]
     for i in range(len(v_N_key_list)):
         k = consonant + v_N_key_list[i]
         if original_CV_romantable[consonant][i] == "":
